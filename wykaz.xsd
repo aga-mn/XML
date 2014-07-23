@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:complexType name="adres">
+		<xsd:sequence>
+			<xsd:element name="kod-poczt">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="\d{2}-\d{3}"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="miasto" type="xsd:string"/>
+			<xsd:element name="ulica" type="xsd:string"/>
+			<xsd:element name="numer" type="xsd:positiveInteger"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="osoba">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string" />
+			<xsd:element name="nazwisko" type="xsd:string" />
+			<xsd:element name="stanowisko" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:element name="wykaz">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="miejsce" type="xsd:string"/>
+				<xsd:element name="data" type="xsd:date"/>
+				<xsd:element name="wspolnota">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="nazwa" type="xsd:string"/>
+							<xsd:element name="adres" type="adres"/>
+							<xsd:element name="rodzaj" type="xsd:string"/>
+							<xsd:element name="inne" type="xsd:string"/>
+							<xsd:element name="administrator" type="xsd:string"/>
+							<xsd:element name="email" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="zdjecie" type="xsd:string" /> 
+				<xsd:element name="wykaz-lokali">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="lokal" maxOccurs="unbounded" >
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="numer-lokalu" type="xsd:integer"/>
+										<xsd:element name="wlasciciel" type="osoba"/>
+										<xsd:element name="dlug" type="xsd:decimal"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="sporzadzajacy" type="osoba"/>
+				<xsd:element name="zlecajacy" type="osoba"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	
+</xsd:schema>

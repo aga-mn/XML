@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<?xml-stylesheet type="text/xsl" href="faktura.xsl"?> 
+
+<faktura>
+	<numer>2340</numer>
+	<sprzedawca_dane>
+		<nazwa>PPHU ICE-NET</nazwa>
+		<adres> 
+			<miasto>Łomża</miasto>
+			<kod_poczt>18-400</kod_poczt>
+			<ulica>ul. Reymonta </ulica>
+			<nr>12/78</nr>
+		</adres>
+		<nip>718-340-23-00</nip>
+		<regon>678909828</regon>
+	</sprzedawca_dane>
+	
+	<odbiorca_dane>
+		<nazwa>ZHU ZURT</nazwa>
+		<adres>
+			<miasto>Łomża</miasto>
+			<kod_poczt>18-400</kod_poczt>
+			<ulica>ul. Piękna </ulica>
+			<nr>34</nr>
+		</adres>
+		<nip>567-733-77-22</nip>
+		<regon>657362795</regon>
+	</odbiorca_dane>
+
+	<data_wyst>2003-10-27</data_wyst>
+	<data_sprzed>2003-10-27</data_sprzed>
+	<termin>2003-11-27</termin>
+	<sposob_zaplaty>gotowka</sposob_zaplaty>
+	
+	<lista_towarow>
+		<pozycja lp="1">
+			<nazwa_towaru>MS Windows XP HE OEM </nazwa_towaru>
+			<jm>szt.</jm>
+			<ilosc>1</ilosc>
+			<cena_netto>320</cena_netto>
+			<wartosc_netto>320</wartosc_netto>
+			<stawka_vat>22</stawka_vat>
+			<wartosc_vat>390.4</wartosc_vat>
+		</pozycja>
+		
+		<pozycja lp="2">
+			<nazwa_towaru>MS Office XP BOX </nazwa_towaru>
+			<jm>szt.</jm>
+			<ilosc>2</ilosc>
+			<cena_netto>1600</cena_netto>
+			<wartosc_netto>3200</wartosc_netto>
+			<stawka_vat>22</stawka_vat>
+			<wartosc_vat>3904</wartosc_vat>
+		</pozycja>
+		
+		<pozycja lp="3">
+			<nazwa_towaru>MS Word 2002 OEM </nazwa_towaru>
+			<jm>szt.</jm>
+			<ilosc>1</ilosc>
+			<cena_netto>420</cena_netto>
+			<wartosc_netto>420</wartosc_netto>
+			<stawka_vat>22</stawka_vat>
+			<wartosc_vat>512.4</wartosc_vat>
+		</pozycja>
+		<razem_netto>3940</razem_netto>
+	<razem_vat>4806.8</razem_vat>
+		
+	</lista_towarow>
+
+	<razem_netto>3940</razem_netto>
+	<razem_vat>4806.8</razem_vat>
+	<razem_slownie>cztery tysiace osiemset szesc zlotych 80/100</razem_slownie>
+	
+	<osoba_odb>
+		<imie>Marian </imie>
+		<nazwisko>Kaniewski</nazwisko>
+	</osoba_odb>	
+	
+	<osoba_wyst>
+		<imie>Adrian </imie>
+		<nazwisko>Batycki</nazwisko>
+	</osoba_wyst>
+</faktura>

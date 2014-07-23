@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<?xml-stylesheet type="text/xsl" href="wykaz.xsl"?> 
+<wykaz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="wykaz.xsd">
+
+<miejsce>Grodzisk Maz.</miejsce>
+<data>2004-03-10</data>
+<wspolnota>
+<nazwa>Grunwaldzka</nazwa>
+<adres>
+<kod-poczt>05-825</kod-poczt>
+<miasto>Grodzisk Maz.</miasto>
+<ulica>Grunwaldzka</ulica>
+<numer>7</numer>
+</adres>
+<rodzaj>blok mieszkalny</rodzaj>
+<inne>brak</inne>
+<administrator>Zarzšd Budynków Komunalnych</administrator>
+</wspolnota>
+<zdjecie>IMG_0329.JPG</zdjecie>
+
+<wykaz-lokali>
+<lokal>
+<numer-lokalu>3</numer-lokalu>
+<wlasciciel> 
+<imie>Jan</imie>
+<nazwisko>Młoceń</nazwisko>
+</wlasciciel>
+<dlug>245</dlug>
+</lokal>
+
+<lokal>
+<numer-lokalu>7</numer-lokalu>
+<wlasciciel> 
+<imie>Kamila</imie>
+<nazwisko>Mirko</nazwisko>
+</wlasciciel>
+<dlug>124.12</dlug>
+</lokal>
+
+<lokal>
+<numer-lokalu>9</numer-lokalu>
+<wlasciciel> 
+<imie>Marian</imie>
+<nazwisko>Kowal</nazwisko>
+</wlasciciel>
+<dlug>156.66</dlug>
+</lokal>
+
+</wykaz-lokali>
+
+<sporzadzajacy>
+<imie>Janina</imie>
+<nazwisko>Kwiecien</nazwisko>
+<stanowisko>Kierownik Działu Czynszów</stanowisko>
+</sporzadzajacy>
+
+<zlecajacy>
+<imie>Marian</imie>
+<nazwisko>Biernacki</nazwisko>
+<stanowisko>Dyrektor Zarzšdu Budynków Komunalnych</stanowisko>
+</zlecajacy>
+</wykaz>
